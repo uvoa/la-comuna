@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta charset='UTF-8'>
+<div id="ccc">
+    <div id="hov">XXXX</div>
+    <div id="dtct" onmouseenter="onle()"></div>
+    <div id='c'>
+        <div id='BORIC'class='ca'>
+            <svg id='BORICg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='PROVOSTE'class='ca'>
+            <svg id='PROVOSTEg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='SICHEL'class='ca'>
+            <svg id='SICHELg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='KAST'class='ca'>
+            <svg id='KASTg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='ARTES'class='ca'>
+            <svg id='ARTESg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='OTROS'class='ca'>
+            <svg id='OTROSg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+    </div>
+    <div id='cs'>
+        <div id='bBORIC'class='ca'>
+            <svg id='bBORICg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='bPROVOSTE'class='ca'>
+            <svg id='bPROVOSTEg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='bSICHEL'class='ca'>
+            <svg id='bSICHELg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='bKAST'class='ca'>
+            <svg id='bKASTg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='bARTES'class='ca'>
+            <svg id='bARTESg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+        <div id='bOTROS'class='ca'>
+            <svg id='bOTROSg' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'></svg>
+        </div>
+    </div>
+</div>
+<div id='cright' onmouseenter="onle()">
+    <h1>RESULTADOS 2021</h1>
+    <div id='ONL'></div>
+    <div class='cca' id='bo'><h3>BORIC<span class='pp'>0%</span></h3><h5>2.000.118 votos</h5></div>
+    <div class='cca' id='ka'><h3>KAST<span class='pp'>0%</span></h3><h5>2.000.118 votos</h5></div>
+    <div class='cca' id='si'><h3>SICHEL<span class='pp'>0%</span></h3><h5>2.000.118 votos</h5></div>
+    <div class='cca' id='pr'><h3>PROVOSTE<span class='pp'>0%</span></h3><h5>2.000.118 votos</h5></div>
+    <div class='cca' id='ar'><h3>ARTÉS<span class='pp'>0%</span></h3><h5>2.000.118 votos</h5></div>
+    <div class='cca' id='me'><h3>MEO<span class='pp'>0%</span></h3><h5>2.000.118 votos</h5></div>
+    <div class='cca' id='pa'><h3>PARISI<span class='pp'>0%</span></h3><h5>2.000.118 votos</h5></div>
+</div>
+<style>
+*{padding:0px;margin:0px;}
+    #c{
+        z-index:99;position:absolute;top:4vw;left:4vw;
+        width:52vw;height:52vw;overflow:hidden;z-index: 11;}
+    #cs{
+        position:absolute;top:5vw;left:5vw;opacity:.4;
+        width:50vw;height:50vw;z-index: 10;
+    }
+    #dtct {
+        z-index: 9;
+        position: absolute;top: 0px;left: 0px;right: 0px;height: 100vh;
+    }
+    .ca{border-radius:50%;overflow:hidden;
+    position:absolute;left:0px;top:0px;height:100%;width:100%;transform: scale(1);transition:transform .15s;}
+html,body{overflow:hidden;background-color:rgba(0, 0, 0, 0.56);}
+#c svg{width:52vw;height:52vw;border-radius:4px;}
+#cright{background-color:transparent;position:absolute;right:0vw;top:0vw;width:35vw;bottom: 0px;box-shadow:0px 0px 6px rgba(0,0,0,.5);border-radius:4px;overflow:auto;z-index: 12;}
+#cright * {font-family:Sans-serif;}
+h1 {color:#909090;font-size:2vw;text-align:center;padding:6px 0px;margin:0px 12px;
+border-bottom:1px solid #606060;margin-bottom:4px;cursor: text !important;}
+.cca {margin:0px 12px;color:white;padding:4px 0px;border-bottom:1px solid #252525;}
+.cca h3{font-size:2.5vw;font-weight:bold;letter-spacing:1px;}
+.cca h5 {font-size:2vw;}
+#bo h3{color:#8cff75;}#pr h3{color:#af75ff;}#si h3{color:#6cc6d4;}#ka h3{color:#ffcb3b;}#ar h3{color:#ff4040;}
+#pa h3,#me h3{color:#7e9cff;}
+.cca h3 span {float:right;}
+#ONL {color: #909090;text-align: center;font-size: 3vh;}
+.ca,svg,.cca {pointer-events: none;}polygon{pointer-events: all;}
+#c polygon {transition: fill .3s;}
+#BORICg polygon:hover::before {content:'HUEA';position: absolute;top: 0px;left: 0px;height: 10px;width: 10px;
+background-color: red !important;cursor:text;}
+.CNACTIVE {transform: scale(1.1);}#ccc {height: 100vh;overflow:hidden;}
+.CACTIVE polygon {fill: rgba(255, 255, 255, 0);}
+#hov{color: white;background-color:#101010;position:absolute;display:inline-block;font-size: 5vh;left: calc(30vw - 7vh);
+pointer-events: none;transition: all .2s;z-index: 999;top: 1vh;transform: scale(.5);opacity: 0;padding: 1vh;}
+.hovactive {transform: scale(1) !important;opacity: 1 !important;}
+
+</style>
+<script>
+let cands = ["bBORICg","bPROVOSTEg","bSICHELg","bKASTg","bARTESg","bOTROSg"]
+let __remote= 'https://commune.zone/eleccion/update.php';
+let timeSpan = 600000;
+let _RESULTS;
+let _interval;
+const baseCoord = [0,100];
+let ultimoAng = 0;
+function calcA(puntaje) {
+    let temp = [];
+    let anguloSegmento = Math.PI/180*(puntaje*360/100/4) *-1; // Angulo en 'Radians'
+    let sum = Math.PI/180*(ultimoAng*360/100)*-1;
+    temp.push([ baseCoord[0] * Math.cos(sum) - baseCoord[1] * Math.sin(sum) + 0,
+                baseCoord[0] * Math.sin(sum) + baseCoord[1] * Math.cos(sum) + 0]);
+
+    temp.push([ baseCoord[0]* Math.cos(sum+anguloSegmento) - (baseCoord[1] * Math.sin(sum+anguloSegmento) + 0),
+                baseCoord[0]* Math.sin(sum+anguloSegmento) + (baseCoord[1] * Math.cos(sum+anguloSegmento) + 0) ]);
+
+    temp.push([ baseCoord[0] * Math.cos(sum+anguloSegmento*2) - baseCoord[1] * Math.sin(sum+anguloSegmento*2) + 0,
+                baseCoord[0] * Math.sin(sum+anguloSegmento*2) + baseCoord[1] * Math.cos(sum+anguloSegmento*2) + 0]);
+    temp.push([ baseCoord[0]* Math.cos(sum+anguloSegmento*3) - baseCoord[1] * Math.sin(sum+anguloSegmento*3) + 0,
+                baseCoord[0]* Math.sin(sum+anguloSegmento*3) + baseCoord[1] * Math.cos(sum+anguloSegmento*3) + 0]);
+
+    temp.push([ baseCoord[0]* Math.cos(sum+anguloSegmento*4) - baseCoord[1] * Math.sin(sum+anguloSegmento*4) + 0,
+                baseCoord[0]* Math.sin(sum+anguloSegmento*4) + baseCoord[1] * Math.cos(sum+anguloSegmento*4) + 0]);
+    output = '50,50 ';ultimoAng+=puntaje;
+    temp.forEach(par=>{
+        output+= ((par[0]+50).toString()+ ','+(  (par[1]*-1) +50  ).toString() + ' ');
+    });return output;
+    
+}
+document.addEventListener('DOMContentLoaded', function(event) {
+    //rebuild([10,10,10,10,0,15,45]);
+    var xml = new XMLHttpRequest();
+    xml.onload = function(){ 
+        let req = JSON.parse(this.responseText);
+        _RESULTS = req;
+        if(req.state == 'open'){
+            rebuild([parseFloat(req.b.p.replace(",",".").substring(0,req.b.p.length - 1)),
+            parseFloat(req.k.p.replace(",",".").substring(0,req.k.p.length - 1)),
+            parseFloat(req.s.p.replace(",",".").substring(0,req.s.p.length - 1)),
+            parseFloat(req.o.p.replace(",",".").substring(0,req.o.p.length - 1)),
+            parseFloat(req.a.p.replace(",",".").substring(0,req.a.p.length - 1)),
+            parseFloat(req.m.p.replace(",",".").substring(0,req.m.p.length - 1)),
+            parseFloat(req.p.p.replace(",",".").substring(0,req.p.p.length - 1))]);
+            reBuildNumbs();
+            _interval = window.setInterval(function(){
+                let axml = new XMLHttpRequest();
+                axml.onload = function(){
+                    let req = JSON.parse(this.responseText);
+                    _RESULTS = req;
+                    if(req.state == 'open'){
+                    rebuild([parseFloat(req.b.p.replace(",",".").substring(0,req.b.p.length - 1)),
+                    parseFloat(req.k.p.replace(",",".").substring(0,req.k.p.length - 1)),
+                    parseFloat(req.s.p.replace(",",".").substring(0,req.s.p.length - 1)),
+                    parseFloat(req.o.p.replace(",",".").substring(0,req.o.p.length - 1)),
+                    parseFloat(req.a.p.replace(",",".").substring(0,req.a.p.length - 1)),
+                    parseFloat(req.m.p.replace(",",".").substring(0,req.m.p.length - 1)),
+                    parseFloat(req.p.p.replace(",",".").substring(0,req.p.p.length - 1))]);
+                        reBuildNumbs();
+                    }else{
+                        document.getElementById('ONL').innerHTML = 'OFFLINE (recarga o reclama, la huea no funciona)';
+                        clearInterval(_interval);
+                    }
+                }
+                axml.open('GET',__remote, true);
+                axml.send();
+            },timeSpan);
+            document.getElementById('ONL').innerHTML = 'ONLINE ( actualiza cada 10 minutos )';
+        }else{
+            document.getElementById('ONL').innerHTML = 'OFFLINE (recarga o reclama, la huea no funciona)';
+        }
+
+    }
+    xml.open('GET',__remote, true);
+    xml.send();
+});
+
+
+function reBuildNumbs(){
+    document.getElementById('bo').innerHTML = '<h3>BORIC '+ '<span>' + _RESULTS.b.p +'</span></h3><h5>'+_RESULTS.b.v+'</h5>';
+    document.getElementById('ka').innerHTML = '<h3>KAST '+ '<span>' + _RESULTS.k.p +'</span></h3><h5>'+_RESULTS.k.v+'</h5>';
+    document.getElementById('si').innerHTML = '<h3>SICHEL '+ '<span>' + _RESULTS.s.p +'</span></h3><h5>'+_RESULTS.s.v+'</h5>';
+    document.getElementById('pr').innerHTML = '<h3>PROVOSTE '+ '<span>' + _RESULTS.o.p +'</span></h3><h5>'+_RESULTS.o.v+'</h5>';
+    document.getElementById('ar').innerHTML = '<h3>ARTÉS '+ '<span>' + _RESULTS.a.p +'</span></h3><h5>'+_RESULTS.a.v+'</h5>';
+    document.getElementById('me').innerHTML = '<h3>MEO '+ '<span>' + _RESULTS.m.p +'</span></h3><h5>'+_RESULTS.m.v+'</h5>';
+    document.getElementById('pa').innerHTML = '<h3>PARISI '+ '<span>' + _RESULTS.p.p +'</span></h3><h5>'+_RESULTS.p.v+'</h5>';
+}
+function rebuild(results){
+    let inputT = results;
+    let coords = [calcA(inputT[0]),calcA(inputT[1]),calcA(inputT[2]),calcA(inputT[3]),calcA(inputT[4]),calcA(inputT[5]+inputT[6])];
+    document.getElementById('BORICg').innerHTML=`
+    <polygon points='`+ coords[0] +`' fill='#8cff75' onmouseenter='onen("bBORICg")'/>`;
+    document.getElementById('PROVOSTEg').innerHTML=`
+    <polygon points='`+ coords[3] +`' fill='#af75ff' onmouseenter='onen("bPROVOSTEg")'/>`;
+    document.getElementById('SICHELg').innerHTML=`
+    <polygon points='`+ coords[2] +`' fill='#6cc6d4' onmouseenter='onen("bSICHELg")'/>`;
+    document.getElementById('KASTg').innerHTML=`
+    <polygon points='`+ coords[1] +`' fill='#ffcb3b' onmouseenter='onen("bKASTg")'/>`;
+    document.getElementById('ARTESg').innerHTML=`
+    <polygon points='`+ coords[4] +`' fill='#ff4040' onmouseenter='onen("bARTESg")'/>`;
+    document.getElementById('OTROSg').innerHTML=`
+    <polygon points='`+ coords[5] +`' fill='#606060' onmouseenter='onen("bOTROSg")'/>`;
+
+    document.getElementById('bBORICg').innerHTML=`
+    <polygon points='`+ coords[0] +`' fill='#8cff75' />`;
+    document.getElementById('bPROVOSTEg').innerHTML=`
+    <polygon points='`+ coords[3] +`' fill='#af75ff' />`;
+    document.getElementById('bSICHELg').innerHTML=`
+    <polygon points='`+ coords[2] +`' fill='#87fff3' />`;
+    document.getElementById('bKASTg').innerHTML=`
+    <polygon points='`+ coords[1] +`' fill='#ffcb3b' />`;
+    document.getElementById('bARTESg').innerHTML=`
+    <polygon points='`+ coords[4] +`' fill='#ff4040' />`;
+    document.getElementById('bOTROSg').innerHTML=`
+    <polygon points='`+ coords[5] +`' fill='#606060' />`;
+    
+    ultimoAng = 0;
+}
+function onen(cand){
+    cands.forEach((cnd)=>{
+        if(cand == cnd){
+            document.getElementById(cnd.substring(0,cnd.length-1)).classList.add("CNACTIVE");
+            document.getElementById(cnd.substring(1,cnd.length-1)).classList.remove("CACTIVE");
+            if(cnd == "bOTROSg"){
+                document.getElementById("hov").innerText = "MEO + PARISI";
+            }else{
+                document.getElementById("hov").innerText = cnd.substring(1,cnd.length-1);
+            }
+            document.getElementById("hov").classList.add("hovactive");
+        }else{
+            document.getElementById(cnd.substring(0,cnd.length-1)).classList.remove("CNACTIVE");
+            document.getElementById(cnd.substring(1,cnd.length-1)).classList.add("CACTIVE");
+        }
+    })
+}
+function onle(){
+    cands.forEach((cnd)=>{
+        document.getElementById(cnd.substring(0,cnd.length-1)).classList.remove("CNACTIVE");
+        document.getElementById(cnd.substring(1,cnd.length-1)).classList.remove("CACTIVE");
+        document.getElementById("hov").classList.remove("hovactive");
+    });
+}
+</script>
